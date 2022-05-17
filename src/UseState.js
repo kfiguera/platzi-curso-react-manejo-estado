@@ -22,7 +22,7 @@ function UseState({name}) {
         <div>
             <h2>Eliminar {name}</h2>
             <p>Por favor, escribe el código de seguridad</p>
-            {error && (
+            { (!loading && error) && (
                 <p> El Código es incorrecto</p>
             )}
             {loading && (
