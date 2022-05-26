@@ -1,14 +1,14 @@
 import {UseState} from './UseState';
-import {ClassState} from './ClassState';
+import {UseReducer} from './UseReducer';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <UseState name="UseState"/>
-      <ClassState name="ClassState" />
-    </div>
-  );
+    return (
+        <div className="App">
+            <UseState name="Use State"/>
+            <UseReducer name="Use Reducer"/>
+        </div>
+    );
 }
 
 export default App;
